@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "HtmlFormatterCli": {
+      "commandName": "Project",
+      "commandLineArgs": "\"C:\\Users\\clrud\\source\\repos\\scratch\\CucumberMessages\\minimal.ndjson\" minimal.html",
+      "workingDirectory": "C:\\Users\\clrud\\source\\repos\\cucumber\\html-formatter\\dotnet\\src\\htmlformatter\\Cli\\bin\\Debug\\net8.0"
+    }
+  }
+}

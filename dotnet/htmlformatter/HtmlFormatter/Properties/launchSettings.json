@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "htmlformatter": {
+      "commandName": "Project",
+      "commandLineArgs": ".\\HtmlFormatterCli.exe C:\\Users\\clrud\\source\\repos\\scratch\\CucumberMessages\\Hooks.ndjson hooks.html",
+      "workingDirectory": "C:\\Users\\clrud\\source\\repos\\cucumber\\html-formatter\\dotnet\\src\\cli\\HtmlFormatter\\bin\\Debug\\net8.0"
+    }
+  }
+}

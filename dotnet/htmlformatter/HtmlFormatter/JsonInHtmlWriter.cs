@@ -23,6 +23,11 @@ public class JsonInHtmlWriter : StreamWriter
         this.Write(value.ToCharArray(), 0, value.Length);
     }
 
+    public override void Write(char[] value)
+    {
+        this.Write(value, 0, value.GetLength(0));
+    }
+
     public override void Write(char[] source, int offset, int length)
     {
         if (offset + length > source.GetLength(0))

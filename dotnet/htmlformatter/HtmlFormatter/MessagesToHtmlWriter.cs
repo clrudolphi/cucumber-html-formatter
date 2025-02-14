@@ -76,6 +76,7 @@ public class MessagesToHtmlWriter : IDisposable
         }
         try
         {
+            writer.Flush();
             writer.Close();
         }
         finally

@@ -13,7 +13,7 @@ namespace htmlformatterTest
 
         public JsonInHtmlWriterTests()
         {
-            outputStreamWriter = new StreamWriter(outStream, Encoding.UTF8);
+            outputStreamWriter = new StreamWriter(outStream, new UTF8Encoding(false));
             writer = new JsonInHtmlWriter(outputStreamWriter);
         }
 

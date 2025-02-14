@@ -17,6 +17,7 @@ namespace HtmlFormatter
             var options = new JsonSerializerOptions();
             options.PropertyNamingPolicy = JsonNamingPolicy.CamelCase;
             options.Converters.Add(new CucumberMessageEnumConverter<AttachmentContentEncoding>());
+            options.Converters.Add(new CucumberMessageEnumConverter<HookType>());
             options.Converters.Add(new CucumberMessageEnumConverter<PickleStepType>());
             options.Converters.Add(new CucumberMessageEnumConverter<SourceMediaType>());
             options.Converters.Add(new CucumberMessageEnumConverter<StepDefinitionPatternType>());

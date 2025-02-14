@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HtmlFormatter;
 
-internal class JsonInHtmlWriter : StreamWriter
+public class JsonInHtmlWriter : StreamWriter
 {
     private readonly int BUFFER_SIZE = 1024;
     private StreamWriter Writer;
@@ -15,13 +15,19 @@ internal class JsonInHtmlWriter : StreamWriter
     public JsonInHtmlWriter(StreamWriter writer) : base(writer.BaseStream)
     {
         this.Writer = writer;
+        this.escapeBuffer = new char[BUFFER_SIZE]; // Initialize escapeBuffer
     }
-    public JsonInHtmlWriter(Stream stream) : base(stream)
+
+    public override void Write(string value)
     {
+        this.Write(value.ToCharArray(), 0, value.Length);
     }
 
     public override void Write(char[] source, int offset, int length)
     {
+        if (offset + length > source.GetLength(0))
+            throw new ArgumentException("Cannot read past the end of the input source char array.");
+
         char[] destination = prepareBuffer();
         int flushAt = BUFFER_SIZE - 2;
         int written = 0;

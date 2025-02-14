@@ -6,7 +6,11 @@ if (args.Length == 0) { Console.WriteLine("Missing NDJSON file name."); return; 
 
 var fileName = args[0];
 var rootFileName = Path.GetFileNameWithoutExtension(fileName);
+var filePath = Path.GetDirectoryName(fileName);
 var outputFileName = rootFileName + ".html";
+
+if (!String.IsNullOrEmpty(filePath))
+    outputFileName = Path.Combine(filePath, outputFileName);
 
 if (args.Length == 2)
 {

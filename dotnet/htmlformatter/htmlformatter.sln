@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "htmlformatter", "HtmlFormat
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HtmlFormatterCli", "Cli\HtmlFormatterCli.csproj", "{D22BDF2A-6E37-4F8D-A791-425A301539B8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "htmlformatterTest", "htmlformatterTest\htmlformatterTest.csproj", "{C4792F4A-F786-4AC4-BE28-6E36570545A2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{D22BDF2A-6E37-4F8D-A791-425A301539B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D22BDF2A-6E37-4F8D-A791-425A301539B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D22BDF2A-6E37-4F8D-A791-425A301539B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4792F4A-F786-4AC4-BE28-6E36570545A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4792F4A-F786-4AC4-BE28-6E36570545A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4792F4A-F786-4AC4-BE28-6E36570545A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4792F4A-F786-4AC4-BE28-6E36570545A2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [21.9.0] - 2025-02-02
+### Changed
+- Update dependency messages to support v27
+
+## [21.8.0] - 2025-01-22
+### Changed
+- [JavaScript] Default to built-in CSS and JS files ([#344](https://github.com/cucumber/html-formatter/pull/344))
+
+### Fixed
+- Use correct favicon ([#341](https://github.com/cucumber/html-formatter/pull/341))
+
 ## [21.7.0] - 2024-08-12
 ### Changed
 - Updated dependencies to support latest messages
@@ -34,7 +45,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [21.3.0] - 2024-03-15
 ### Changed
-- Upgrade `react-components` to [22.1.0](https://github.com/cucumber/react-components/releases/tag/v22.1.0) ([#275](https://github.com/cucumber/html-formatter/pull/293))
+- Upgrade `react-components` to [22.1.0](https://github.com/cucumber/react-components/releases/tag/v22.1.0) ([#293](https://github.com/cucumber/html-formatter/pull/293))
 
 ## [21.2.0] - 2023-12-21
 ### Changed
@@ -336,7 +347,9 @@ even if there were no errors.
 ### Added
 - First release
 
-[Unreleased]: https://github.com/cucumber/html-formatter/compare/v21.7.0...HEAD
+[Unreleased]: https://github.com/cucumber/html-formatter/compare/v21.9.0...HEAD
+[21.9.0]: https://github.com/cucumber/html-formatter/compare/v21.8.0...v21.9.0
+[21.8.0]: https://github.com/cucumber/html-formatter/compare/v21.7.0...v21.8.0
 [21.7.0]: https://github.com/cucumber/html-formatter/compare/v21.6.0...v21.7.0
 [21.6.0]: https://github.com/cucumber/html-formatter/compare/v21.5.0...v21.6.0
 [21.5.0]: https://github.com/cucumber/html-formatter/compare/v21.4.1...v21.5.0
